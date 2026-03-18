@@ -2,5 +2,7 @@
 
 This project is currently **In Progress**
 
-### Screenshots
+## Screenshots
+
+### Creating VM
 ![VM Creation](images/vm-creation.png)
