@@ -80,8 +80,8 @@ This step also demonstrates basic server deployment and file management in IIS.
 - Checked VM performance metrics in Azure (CPU, Memory, Network)  
 - Reviewed Windows Event Viewer logs (System, Application, Security)
 - **Purpose** To learn basic monitoring and troubleshooting techniques in a cloud environment.
-- Screenshot: ![Create SSL](images/metric.png)
-![Create SSL](images/event-viewer.png)
+- Screenshot: ![Monitor](images/monitor.png)
+![Event Viewer](images/event-viewer.png)
 
 ## Troubleshooting
 
@@ -111,3 +111,14 @@ After updating 'index.html` in `C:\inetpub\wwwroot`, the page showed "403 Forbid
 - Refresh the browser (Ctrl+F5)
 
 #### Result: Page loaded successfully and changes were visible.
+
+### What I learned
+- Azure Virtual Machine deployment
+- Network Security Group (NSG) configuration
+- Remote server management (RDP)
+- IIS installation and web hosting basics
+- Basic HTTPS / SSL configuration
+- Snapshot and backup
+- Monitoring and log review
+- Troubleshooting real-world issues
+- Cloud security practices
