@@ -1,13 +1,17 @@
 # Windows Server VM in Azure - Secure Web Server Project
 
 ## Overview
-
-This project is currently **In Progress**
+This project demonstrates how to deploy and configure a Windows Server 2025 Virtual Machine in Microsoft Azure and use it as a basic web server.
+The goal was to learn the fundamentals of cloud infrastructure, networking, server configuration, and basic security practices.
 
 ## Architecture
 - Windows Server 2025 VM
+- IIS Web Server
 - Network Security Group (NSG)
 - Public IP for web access
+- SSL (HTTPS)
+- Snapshot (backup)
+- Basic monitoring (CPU, Network, Event Logs)
 
 ## Steps
 
