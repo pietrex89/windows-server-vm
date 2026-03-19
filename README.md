@@ -4,14 +4,10 @@
 
 This project is currently **In Progress**
 
----
-
 ## Architecture
 - Windows Server 2025 VM
 - Network Security Group (NSG)
 - Public IP for web access
-
----
 
 ## Steps
 
@@ -32,8 +28,17 @@ This project is currently **In Progress**
 - Connected to the VM using Remote Desktop Protocol
 - Verified successful login and access to Windows Server
 - **Purpose** To manage and configure the server remotely.
-- Screenshot: ![Remote Connection](images/vm-rdp1.png)
+- Screenshots: ![Remote Connection](images/vm-rdp1png.png)
   ![Remote Connection](images/vm-rdp2.png)
+
+### 4. IIS Installation
+- Opened Server Manager
+- Installed Web Server (IIS) role
+- Verified default IIS page using localhost
+- **Purpose** To configure the VM as a web server.
+- Screenshots: ![IIS Installation](images/iis.png)
+![IIS Installation](images/iis-installation.png)
+![IIS Installation](images/iis-welcome.png)
 
 ## Troubleshooting
 
@@ -45,5 +50,5 @@ While connecting to the VM via RDP, I encountered a login issue caused by an inc
 - Reset the password using Azure Portal
 - Used Azure CLI to unlock the user account
 
-**Result:**  
+### Result:
 Successfully restored access to the VM and verified RDP connectivity.
