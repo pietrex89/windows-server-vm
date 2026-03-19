@@ -4,25 +4,36 @@
 
 This project is currently **In Progress**
 
+---
+
 ## Architecture
 - Windows Server 2025 VM
 - Network Security Group (NSG)
 - Public IP for web access
 
+---
+
 ## Steps
 
-### 1. Virtual Machine Creation:
+### 1. Virtual Machine Creation
 - Created Windows Server 2025 VM in Azure
-- Enabled public IP to allow web access
+- Configured basic settings (region, size, credentials)
 - **Purpose:** To deploy a functional server accessible from the internet
 - Screenshot: ![VM Creation](images/vm-creation.png)
 
-### 2. Network Security Configuration:
+### 2. Network Security Configuration (NSG)
 - RDP (port 3389) restricted to my IP only
 - HTTP (port 80) allowed publicly
 - Other traffic blocked
-- **Purpose:** Ensures secure access and limits exposure to threats
+- **Purpose:** To secure remote access while allowing public web traffic
 - Screenshot: ![Configure NSG](images/nsg.png)
+
+### 3. Remote Connection (RDP)
+- Connected to the VM using Remote Desktop Protocol
+- Verified successful login and access to Windows Server
+- **Purpose** To manage and configure the server remotely.
+- Screenshot: ![Remote Connection](images/vm-rdp1.png)
+  ![Remote Connection](images/vm-rdp2.png)
 
 ## Troubleshooting
 
