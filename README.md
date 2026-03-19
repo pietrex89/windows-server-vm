@@ -50,6 +50,15 @@ This step also demonstrates basic server deployment and file management in IIS.
 - Screenshots: ![Index Html](images/index-html-in-iis.png)
   ![Web Page](images/web-page.png)
 
+### 6. Public Access Verification
+
+- Accessed the web server using the VM's public IP address
+- Verified that the custom HTML page deployed in step 5 is visible
+- Ensured NSG and firewall rules allow HTTP (port 80)
+- **Purpose:** To confirm that the server is accessible from the internet and that network rules are configured correctly.
+- Screenshot: ![Public Access](images/public-ip-address.png)
+  ![Public Access](images/public-access.png)
+
 ## Troubleshooting
 
 ### Issue (1): RDP login failed (account locked / password issue)
