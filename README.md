@@ -71,6 +71,7 @@ This step also demonstrates basic server deployment and file management in IIS.
 - **Purpose** Demonstrates basic web security practice and HTTPS configuration in Azure/IIS.
 - 📸 Screenshot: ![Create SSL](images/create-ssl.png)
   ![HTTPs](images/https.png)
+  ![HTTPs](images/https-rule.png)
 
 ### 💾 7. Backup / Snapshot
 
