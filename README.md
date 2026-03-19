@@ -40,9 +40,19 @@ This project is currently **In Progress**
 ![IIS Installation](images/iis-installation.png)
 ![IIS Installation](images/iis-welcome.png)
 
+### 5. Custom Web Page Deployment
+- Navigated to the IIS web root folder: `C:\inetpub\wwwroot`
+- Created a simple HTML page with dark theme styling:
+- Saved it as index.html
+- Verified the page in a browser using http://localhost
+- **Purpose** To test web hosting functionality and verify that HTTP access is working.
+This step also demonstrates basic server deployment and file management in IIS.
+- Screenshots: ![Index Html](images/index-html-in-iis.png)
+  ![Web Page](images/web-page.png)
+
 ## Troubleshooting
 
-### Issue: RDP login failed (account locked / password issue)
+### Issue (1): RDP login failed (account locked / password issue)
 
 While connecting to the VM via RDP, I encountered a login issue caused by an incorrect password and account lockout.
 
@@ -52,3 +62,19 @@ While connecting to the VM via RDP, I encountered a login issue caused by an inc
 
 ### Result:
 Successfully restored access to the VM and verified RDP connectivity.
+
+---
+
+### Issue (2): Page not displaying after HTML update
+
+After updating 'index.html` in `C:\inetpub\wwwroot`, the page showed "403 Forbidden" and did not load correctly in the browser.
+
+### Solution:
+- Open IIS Manager as Administrator
+- Navigate to your site (Default Web Site)
+- Enable **Directory Browsing** in the **Actions / Feature View** panel
+- Ensure the **Default Document** includes `index.html`
+- Restart the website
+- Refresh the browser (Ctrl+F5)
+
+### Result: Page loaded successfully and changes were visible.
