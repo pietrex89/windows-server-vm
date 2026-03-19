@@ -73,7 +73,15 @@ This step also demonstrates basic server deployment and file management in IIS.
 - Created a snapshot of the Windows Server VM
 - Snapshot allows restoring VM to a previous state if needed
 - **Purpose** Demonstrates basic backup and recovery practices in Microsoft Azure.
-- Screenshot: ![Create SSL](images/snapshot.png)
+- Screenshot: ![Create SSL](images/snapshot1.png)
+
+### 8. Monitoring and Logs
+
+- Checked VM performance metrics in Azure (CPU, Memory, Network)  
+- Reviewed Windows Event Viewer logs (System, Application, Security)
+- **Purpose** To learn basic monitoring and troubleshooting techniques in a cloud environment.
+- Screenshot: ![Create SSL](images/metric.png)
+![Create SSL](images/event-viewer.png)
 
 ## Troubleshooting
 
