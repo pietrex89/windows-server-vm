@@ -68,6 +68,13 @@ This step also demonstrates basic server deployment and file management in IIS.
 - Screenshot: ![Create SSL](images/create-ssl.png)
   ![HTTPs](images/https.png)
 
+### 7. Backup / Snapshot
+
+- Created a snapshot of the Windows Server VM
+- Snapshot allows restoring VM to a previous state if needed
+- **Purpose** Demonstrates basic backup and recovery practices in Microsoft Azure.
+- Screenshot: ![Create SSL](images/snapshot.png)
+
 ## Troubleshooting
 
 ### Issue (1): RDP login failed (account locked / password issue)
