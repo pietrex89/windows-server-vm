@@ -59,17 +59,26 @@ This step also demonstrates basic server deployment and file management in IIS.
 - Screenshot: ![Public Access](images/public-ip-address.png)
   ![Public Access](images/public-access.png)
 
+### 6.1 Enable HTTPS
+
+- Added HTTPS binding in IIS using a self-signed certificate
+- Verified access: https://<public-IP from VM Azure Portal --> 20.83.**.**)
+- Page loads securely with SSL
+- **Purpose** Demonstrates basic web security practice and HTTPS configuration in Azure/IIS.
+- Screenshot: ![Create SSL](images/create-ssl.png)
+  ![HTTPs](images/https.png)
+
 ## Troubleshooting
 
 ### Issue (1): RDP login failed (account locked / password issue)
 
 While connecting to the VM via RDP, I encountered a login issue caused by an incorrect password and account lockout.
 
-### Solution:
+#### Solution:
 - Reset the password using Azure Portal
 - Used Azure CLI to unlock the user account
 
-### Result:
+#### Result:
 Successfully restored access to the VM and verified RDP connectivity.
 
 ---
@@ -78,7 +87,7 @@ Successfully restored access to the VM and verified RDP connectivity.
 
 After updating 'index.html` in `C:\inetpub\wwwroot`, the page showed "403 Forbidden" and did not load correctly in the browser.
 
-### Solution:
+#### Solution:
 - Open IIS Manager as Administrator
 - Navigate to your site (Default Web Site)
 - Enable **Directory Browsing** in the **Actions / Feature View** panel
@@ -86,4 +95,4 @@ After updating 'index.html` in `C:\inetpub\wwwroot`, the page showed "403 Forbid
 - Restart the website
 - Refresh the browser (Ctrl+F5)
 
-### Result: Page loaded successfully and changes were visible.
+#### Result: Page loaded successfully and changes were visible.
