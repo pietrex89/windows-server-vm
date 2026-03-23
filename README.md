@@ -1,4 +1,4 @@
-# 🚀Windows Server VM in Azure - Secure Web Server Project
+# 🚀 Windows Server VM in Azure - Secure Web Server Project
 
 ## 📌 Overview
 This project demonstrates how to deploy and configure a Windows Server 2025 Virtual Machine in Microsoft Azure and use it as a basic web server.
@@ -109,7 +109,7 @@ After updating 'index.html` in `C:\inetpub\wwwroot`, the page showed "403 Forbid
 
 #### Solution:
 - Open IIS Manager as Administrator
-- Navigate to your site (Default Web Site)
+- Navigate to site (Default Web Site)
 - Enable **Directory Browsing** in the **Actions / Feature View** panel
 - Ensure the **Default Document** includes `index.html`
 - Restart the website
